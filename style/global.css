@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+root{
+    --font: "Inter", system-ui;
+
+     --title: bold 24px/32px var(--font);
+     --label: Semi bold 16px/20px var(--font);
+     --pg: 16px/20px var(--font);
+     --link: 14px/16px var(--font);
+
+     --bg-primary: #f4f5fb;
+     --always: white;
+     --cl-brand: #ca3884;
+     --cl-brand-hover: #a52c6b;
+     --cl-danger: #c93847;   
+     --ct-primary: #080B12;
+     --ct-secondary: #374151;
+     --ct-tertiary: #9CA3AF;
+     
+     -bd-primary: #D1D5DB;
+     -bd-hover: #B9C2D0;
+}
