@@ -1,0 +1,24 @@
+header{
+    & a{
+        font: var(--link);
+        color: var(--cl-brand) ;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+    }
+
+    & #logo{
+        display: none;
+     }
+}
+
+@media (width >=38rem){
+    header{
+        & #logo{
+            display: block;
+            margin-inline: auto;
+            margin-bottom: 5rem;
+        }
+    }
+}

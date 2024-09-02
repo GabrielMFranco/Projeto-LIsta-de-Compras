@@ -1,0 +1,49 @@
+#compras{
+    & h1{
+        font: var(--title);
+        color: var(--ct-primary);
+        padding-block: .3rem 1.5rem;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        & input{
+            font: var(--label);
+            border-radius: .75rem;
+            height: 2.75rem;
+        }
+
+        & [type="text"]{
+            text-indent: 1rem;
+            border: 2px solid var(--ct-tertiary); 
+
+            &:focus{
+                border-color: var(--cl-brand);
+                outline: none;
+            }
+        }
+        
+        & [type="submit"]{
+            background-color: var(--cl-brand);
+            color: var(--always);
+            border: none;
+
+            &:hover{
+                background-color: var(--cl-brand-hover);
+            }
+        }
+    }
+}
+
+@media (width >=38rem){
+    #compras{
+        & form{
+            display: grid;
+            grid-template-columns: 1fr 10rem;
+            gap: 1rem;
+        }
+    }
+}

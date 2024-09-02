@@ -1,0 +1,78 @@
+#itens{
+    display: grid;
+    margin-block: 2.5rem;
+    gap: 12px;
+    width: 100%;
+
+    & button{
+        border: none;
+        background-color: transparent;
+        
+    }
+
+    
+
+
+    & div.produto{
+        position: relative;
+
+        font: var(-pg);
+        color: var(--ct-secondary);
+        border-radius: .75rem;
+        background-color: var(--always);
+        height: 3.06rem;
+        padding: .5rem 1rem;
+        width: 100%;
+
+        
+        display: grid;
+        grid-template-columns:  1fr 1.5rem;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+
+        .img{
+            width: 20px;
+            height: 20px;
+            background: url(../assets/icon/checkbox.svg) no-repeat;
+            position: absolute;
+            left: 1rem;
+
+        }
+
+        label{
+            text-indent: 1.5rem;
+            position: relative;
+        }
+
+        & input[type="checkbox"]{
+            all: unset;
+            position: absolute;
+                
+        }
+
+        &:has(:checked){
+            span{
+                background: url(../assets/icon/checkbox-select.svg) no-repeat;
+            }
+        } 
+
+            
+    }
+
+    #alert{
+        display: grid;
+        grid-template-columns: 1.5rem 1fr 1.5rem;
+        align-items: center;
+
+        background-color: var(--cl-danger);
+        border-radius: .75rem;
+        margin-top: 2rem;
+        height: 2.75rem;
+        padding-inline: 1rem;
+        gap: .5rem;
+
+        font: var(--label);
+        color: var(--always);
+    }
+}

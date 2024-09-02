@@ -11,6 +11,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-       
+       <main>
+           <header>
+            <img src="assets/logo.svg" alt="" id="logo">
+            <a href="#"><img src="assets/icon/arrow-right.svg" alt="">Voltar</a>
+           </header>
+
+            <section id="compras">
+                <h1>Compras da semana</h1>
+                <form action="">
+                    <input type="text" name="additem" id="additem" placeholder="Adicione um novo item">
+                    <input type="submit" value="Adicionar item">
+                </form>
+            </section>
+            
+            <section id="itens">
+                <div class="produto">
+                    <span class="img"></span>               
+                    <input type="checkbox" name="produto" id="produto1">
+                    <label for="produto1">Pão de forma</label>
+                    <button><img src="assets/icon/trash.svg" alt=""></button>
+                </div>
+
+                <div class="produto">     
+                    <span class="img"></span>             
+                    <input type="checkbox" name="produto" id="produto2">
+                    <label for="produto2">Café preto</label>
+                    <button><img src="assets/icon/trash.svg" alt=""></button>
+                </div>
+
+                <div class="produto">  
+                    <span class="img"></span>                   
+                    <input type="checkbox" name="produto" id="produto3">
+                    <label for="produto3">Suco de laranja</label>
+                    <button><img src="assets/icon/trash.svg" alt=""></button>
+                </div>
+
+                <div class="produto">
+                    <span class="img"></span> 
+                    <input type="checkbox" name="produto" id="produto4">
+                    <label for="produto4">Bolacha</label>
+                    <button><img src="assets/icon/trash.svg" alt=""></button>
+                </div>
+
+                <div id="alert">
+                    <img src="assets/icon/alert.svg" alt="icon alert">
+                    <span>O item foi removido da lista</span>
+                    <button><img src="assets/icon/X.svg" alt=""></button>
+                </div>        
+            </section>
+
+
+       </main> 
+
 </body>
 </html>

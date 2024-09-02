@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-root{
+:root{
     --font: "Inter", system-ui;
 
      --title: bold 24px/32px var(--font);
-     --label: Semi bold 16px/20px var(--font);
-     --pg: 16px/20px var(--font);
+     --label: 16px/20px var(--font); /* semi bold*/
+     --pg: medium 16px/20px var(--font);
      --link: 14px/16px var(--font);
 
      --bg-primary: #f4f5fb;
@@ -23,4 +23,18 @@ root{
      
      -bd-primary: #D1D5DB;
      -bd-hover: #B9C2D0;
+}
+body{
+    background-color: var(--bg-primary);    
+}
+main{
+    padding: 4.3rem 2rem;
+}
+
+@media (width >= 38rem){
+    main{
+        padding-top: 1.5rem;
+        width: 39.18rem;
+        margin-inline: auto;
+    }
 }
