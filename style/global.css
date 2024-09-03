@@ -27,6 +27,7 @@
 body{
     background-color: var(--bg-primary);    
 }
+
 main{
     padding: 4.3rem 2rem;
 }
