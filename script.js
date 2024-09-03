@@ -41,6 +41,8 @@ form.onsubmit = (event) => {
 
     //chama o evento pro botao de apagar
     newButton.addEventListener("click", eventBtn)
+
+    addItem.value = ""
 }
 
 //função que remove a div quando clica no botão.
