@@ -1,5 +1,6 @@
 const addItem = document.querySelector("#additem")
 const form = document.querySelector("form")
+const footer = document.querySelector("footer")
 
 // pegar o valor do input quando aciona o submit
 form.onsubmit = (event) => {
@@ -33,18 +34,25 @@ form.onsubmit = (event) => {
     const newImgBtn = document.createElement("img")
     newButton.appendChild(newImgBtn)
     newImgBtn.setAttribute("src", "assets/icon/trash.svg")
-    
-    
+
+    // coloca os itens na div
     const itens = document.querySelector("#itens")
     itens.appendChild(newItem);
 
-
-
-
+    //chama o evento pro botao de apagar
+    newButton.addEventListener("click", eventBtn)
 }
 
+//função que remove a div quando clica no botão.
+function eventBtn(event){
+    footer.style.opacity = 1
+    //obtem o botão clicado
+    const button = event.target
+    // Pega a div com classe produto mais proxima
+    const item = button.closest('.produto')
+    item.remove()
+}
 
-
-
-// criar nova div com a classe produto
-// adicionar o valor do input na div
+function eventAlert(){
+    footer.style.opacity = 0
+}

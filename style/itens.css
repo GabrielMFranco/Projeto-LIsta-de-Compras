@@ -7,6 +7,7 @@
     & button{
         border: none;
         background-color: transparent;  
+        cursor: pointer;  
     }
     
     & div.produto{
@@ -55,6 +56,11 @@
     }  
 }
 
+footer{
+    opacity: 0;
+    transition: 150ms;
+}
+
 #alert{
     display: grid;
     grid-template-columns: 1.5rem 1fr 1.5rem;
@@ -72,6 +78,7 @@
 
     & button{
         border: none;
-        background-color: transparent;  
+        background-color: transparent;
+        cursor: pointer;  
     }
 }
