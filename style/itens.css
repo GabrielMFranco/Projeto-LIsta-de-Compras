@@ -3,6 +3,7 @@
     margin-block: 2.5rem;
     gap: 12px;
     width: 100%;
+    
 
     & button{
         border: none;
@@ -13,7 +14,7 @@
     & div.produto{
         position: relative;
 
-        font: var(-pg);
+        font: var(--pg); 
         color: var(--ct-secondary);
         border-radius: .75rem;
         background-color: var(--always);
@@ -34,10 +35,11 @@
             background: url(../assets/icon/checkbox.svg) no-repeat;
             position: absolute;
             left: 1rem;
+            bottom: .85rem;
 
         }
 
-        label{
+        & label{
             text-indent: 1.5rem;
             position: relative;
         }
